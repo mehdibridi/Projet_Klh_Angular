@@ -69,7 +69,7 @@ export class CreateRecetteComponent implements OnInit {
 
   private useRecette() {
     this.key = 'id';
-    this.display = 'nom'; // [ 'station', 'state' ];
+    this.display = 'nom'; 
     this.keepSorted = true;
     this.source = this.sourceRecette;
     this.confirmed = this.confirmedRecette;
