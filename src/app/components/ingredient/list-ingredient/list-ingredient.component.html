@@ -1,0 +1,25 @@
+<div>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">nom</th>
+      <th scope="col">Modifier</th>
+      <th scope="col">Supprimer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr scope="col" *ngFor="let ingredient of ingredients">
+      <td>{{ ingredient.id }}</td>
+      <td>{{ ingredient.nom }}</td>
+      <td>
+        <button type="button"(click)="onEdit(ingredient)" class="btn btn-secondary">Modifier</button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-danger" (click)="onDelete(ingredient)">Supprimer</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

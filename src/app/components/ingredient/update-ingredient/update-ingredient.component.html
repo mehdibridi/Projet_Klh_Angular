@@ -1,0 +1,42 @@
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-12 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <h3 class="mb-0">Nouveau ingredient</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body bg-secondary">
+          <form [formGroup]="ingredientform" (ngSubmit)="onSubmit()">
+            <h6 class="heading-small text-muted mb-4">nom</h6>
+            <div class="pl-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label">nom :</label>
+                    <input type="text"  class="form-control form-control-alternative" placeholder="nom" formControlName="nom">
+                  </div>
+                </div>
+
+              </div>
+              <div class="pl-lg-4">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary pull-right" [disabled]="!ingredientform.valid">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
