@@ -72,6 +72,7 @@ export class UpdateRecetteComponent implements OnInit {
 
     }
   }
+  // dual-list traitement
   keepSorted = true;
   key: string;
   display: string;

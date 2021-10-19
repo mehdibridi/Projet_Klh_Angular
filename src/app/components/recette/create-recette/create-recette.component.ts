@@ -49,6 +49,9 @@ export class CreateRecetteComponent implements OnInit {
     console.log(this.recette.ingredients);
     this.recetteService.addRecette(this.recette);
   }
+  
+ // dual-list traitement
+
   keepSorted = true;
   key: string;
   display: string;
